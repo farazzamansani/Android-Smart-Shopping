@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="au.edu.utas.smartshopping.shoppingList">
+
+    <LinearLayout
+        android:layout_margin="-20dp"
+        android:id="@+id/task_list_options"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <Button
+            android:id="@+id/share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/btn_default"
+            android:text="Share" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:text="Sort By:"
+            android:textSize="20dp" />
+        <Spinner
+            android:scrollbarSize="20dp"
+            android:layout_weight="1"
+            android:id="@+id/sort_filter"
+            android:spinnerMode="dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/sort_options" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/newshoppingfromlistbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/btn_default"
+        android:text="Add New Item" />
+
+
+
+    <LinearLayout
+        android:background="#000000"
+        android:id="@+id/adjustlayout"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></LinearLayout>
+    <ScrollView
+        android:id="@+id/adjustme"
+        android:fadeScrollbars="false"
+        android:layout_width="match_parent"
+        android:layout_height="365dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp">
+        <LinearLayout
+            android:id="@+id/taskListRoot"
+            android:background="#EEEEEE"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/shoppingdone"
+            android:layout_width="match_parent"
+            android:layout_weight="0"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/btn_default"
+            android:text="Shopping Done!" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
+

@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Smart Shopping</string>
+    <string-array name="sort_options">
+        <item>Name</item>
+        <item>Bought At</item>
+        <item>Price</item>
+    </string-array>
+
+    <string-array name="historysort_options">
+        <item>Name</item>
+        <item>Bought At</item>
+        <item>Price</item>
+        <item>Buy Date</item>
+    </string-array>
+
+
+    <string-array name="quantity_array">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+
+    </string-array>
+</resources>
